@@ -18,10 +18,7 @@ body {
     background-size: cover; 
     background-position: center center; 
     background-attachment: fixed; 
-    min-height: 100vh; 
-    min-width: 100%; 
-    margin: 0 auto; 
-    overflow-x: hidden; 
+    min-height: 100vh;  
 }
 
 .site-title {
@@ -70,6 +67,7 @@ body {
 
 .search-button:hover {
     background-color: $button-hover; 
+    cursor: pointer; 
 }
 
 .fa-search {
@@ -124,15 +122,19 @@ body {
 
 .nav-links {
     display: flex; 
+    padding-left: 0; 
 }
 
 .nav-links li {
     list-style-type: none; 
-    padding-left: 10px;
-    margin-left: 5px; 
     font-family: 'Aleo', serif;
     text-transform: uppercase; 
     line-height: 26px;
+}
+
+.nav-links li:not(:first-child) {
+    padding-left: 10px;
+    margin-left: 5px; 
 }
 
 .nav-links a {
@@ -156,20 +158,10 @@ body {
     background-size: cover; 
     background-position: center center; 
     background-attachment: fixed; 
-    min-height: 90vh; 
-}
-
-.section3-wrapper {
-    max-width: 90%; 
-    margin: 0 auto;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-}
-
-.section3 {
-    display: flex; 
-    align-items: center; 
+    min-height: 90vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
 }
 
 .section3-text {
@@ -201,6 +193,7 @@ body {
 .explore-button {
     width: 179px; 
     height: 45px; 
+    margin-top: 20px;
     font-size: 16px; 
     line-height: 26px; 
     letter-spacing: 1.2px; 
@@ -211,19 +204,35 @@ body {
     background-image: url('../img/explore-button.png');
 }
 
+.explore-button:hover {
+    color: black; 
+    cursor: pointer;  
+}
+
 .section3-images {
     display: flex; 
-    flex-direction: column; 
+    flex-direction: column;
+    align-items: center; 
+    width: 40%;  
 }
 
 
+.house, .mountains_small {
+    padding: 5px; 
+}
+
 .mountains_small {
-    padding-top: 20px; 
-    margin-left: 40px; 
+    align-self: flex-end; 
 }
 
 .section4 {
     background-color: #333333; 
+    display: flex; 
+    justify-content: center; 
+}
+
+.how-it-works {
+    max-width: 100%; 
 }
 
 .section5 {
@@ -244,7 +253,7 @@ body {
     margin: 0 auto;   
 }
 
-.section5-text-container {
+.section-text-container {
     background-color: #232323;
     opacity: 0.9; 
     width: 543px; 
@@ -290,6 +299,22 @@ body {
     color: $text-color; 
     border: none; 
 
+}
+
+.book-button:hover {
+    color: black; 
+    cursor: pointer; 
+}
+
+.section6 {
+    background-image: url('../img/sea.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed;
+    min-height: 80vh;  
+    display: flex; 
+    align-items: center; 
 }
 
 
