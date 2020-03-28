@@ -4,8 +4,11 @@ $button-background: #5474FD;
 $button-hover: #4963d1; 
 
 body {
-    margin: 10px; 
     font-family: 'Josefin Sans', sans-serif; 
+}
+
+html {
+    scroll-behavior: smooth; 
 }
 
 .section1 {
@@ -80,7 +83,7 @@ body {
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    justify-content: center; 
+    justify-content: center;  
     min-height: 20vh; 
     cursor: pointer; 
 }
@@ -162,6 +165,7 @@ body {
     display: flex;
     justify-content: center; 
     align-items: center;   
+    flex-wrap: wrap; 
 }
 
 .section3-text {
@@ -241,30 +245,20 @@ body {
     background-size: cover; 
     background-position: center center; 
     background-attachment: fixed;
-    min-height: 80vh;  
+    min-height: 100vh;  
     display: flex; 
     align-items: center; 
-}
-
-.section5-text-wrapper {
-    max-width: 80%;
-    display: flex; 
-    align-items: center;
-    margin: 0 auto;   
-}
-
-.section-text-container {
-    background-color: #232323;
-    opacity: 0.9; 
-    width: 543px; 
-    height: 374px; 
+    position: relative; 
 }
 
 .section5-text-container {
-    display: flex; 
-    flex-direction: column; 
-    justify-content: space-around; 
-    padding: 20px; 
+    background-color: #232323;
+    opacity: 0.9; 
+    width: 543px; 
+    height: 350px;
+    position: absolute; 
+    left: 200px; 
+    padding: 20px;  
 }
 
 .destination-country {
@@ -298,7 +292,7 @@ body {
     text-transform: uppercase;
     color: $text-color; 
     border: none; 
-
+    margin-top: 30px;  
 }
 
 .book-button:hover {
@@ -312,9 +306,118 @@ body {
     background-size: cover; 
     background-position: center center; 
     background-attachment: fixed;
-    min-height: 80vh;  
+    min-height: 100vh;  
     display: flex; 
     align-items: center; 
+    position: relative; 
+}
+
+.section6-text-container {
+    background-color: #232323;
+    opacity: 0.9; 
+    width: 543px; 
+    height: 350px;
+    position: absolute; 
+    right: 200px; 
+    padding: 20px;  
+}
+
+.section7 {
+    background-image: url('../img/traveler.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    min-height: 90vh; 
+    
+}
+
+.section7-title {
+    font-family: 'Aleo', serif;
+    font-size: 36px; 
+    line-height: 26px; 
+    color: $text-color; 
+}
+
+.content-container {
+    background-color: #333333; 
+    min-width: 55%; 
+    min-height: 284px;
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap;  
+    margin-top: 40px;
+}
+
+.section7-text-container {
+    display: flex; 
+    flex-direction: column; 
+    max-width: 581px; 
+    padding: 10px; 
+    margin-left: 20px; 
+}
+
+.traveler-name {
+    font-size: 20px;
+    line-height: 26px;
+    color: $text-color; 
+    text-transform: uppercase; 
+}
+
+.testimony {
+    font-size: 16px;
+    line-height: 26px;
+    color: $text-color2; 
+}
+
+.fa-quote-left {
+    color: #5474FD; 
+    font-size: 36px; 
+    padding-right: 5px; 
+}
+
+.footer-container {
+    background-color: #333333; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 20vh; 
+}
+
+.motto-footer {
+    color: $text-color; 
+}
+
+.icons-container img:not(:first-child) {
+    margin-left: 20px; 
 }
 
 
+.facebook, .twitter, .linkedin, .pinterest {
+    background: none; 
+    border: none; 
+}
+
+.icons-container i {
+    color: $text-color; 
+}
+
+.icons-container i:hover {
+    color: $button-background; 
+    cursor: pointer; 
+}
+
+@media only screen and (max-width: 700px) {
+    .search-bar {
+      width: 200px; 
+    }
+    .section3-paragraph1, .section3-paragraph2 {
+        width: 100%; 
+    }
+  }
